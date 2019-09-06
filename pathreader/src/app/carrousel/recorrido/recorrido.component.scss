@@ -1,0 +1,25 @@
+ngb-carousel .picsum-img-wrapper {
+    position: relative;
+    height: 0;
+    padding-top: 50%; /* Keep ratio for 900x500 images */
+  }
+  
+  ngb-carousel .picsum-img-wrapper>img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  h3{
+    color: black;
+    font-size: 6cm;
+  }
+
+  p{
+    color: black;
+    font-size: 4cm;
+  }

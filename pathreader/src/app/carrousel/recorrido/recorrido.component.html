@@ -1,0 +1,11 @@
+<ngb-carousel *ngIf="images">
+    <ng-template ngbSlide *ngFor="let reco of recorridos; index as i;">
+        <div class="picsum-img-wrapper">
+            <img [src]="images[0]" alt="Random first slide">
+            </div>
+            <div class="carousel-caption">
+            <h3>{{reco.titulo}}</h3>
+            <p>{{reco.contenido}}</p>
+        </div>
+    </ng-template>
+</ngb-carousel>

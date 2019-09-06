@@ -1,0 +1,16 @@
+<ngb-carousel *ngIf="images">
+    <ng-template ngbSlide *ngFor="let camino of caminos; index as i;">
+        <div class="picsum-img-wrapper">
+            <img [src]="images[0]" alt="Random first slide">
+        </div>
+        <div class="carousel-caption">
+                <h3>{{camino.titulo}}</h3>
+                <p>{{camino.contenido}}</p>
+            <button type="button" class="btn btn-outline-primary" (click)="verRecorrido(camino)">toque para ver mas detalles</button>
+
+            <!-- <a href="" rel="nofollow noopener noreferrer" >
+                toque para ver mas detalles
+            </a> -->
+        </div>
+    </ng-template>
+</ngb-carousel>
